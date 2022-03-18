@@ -10,8 +10,9 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
     <link rel="stylesheet" href="./assets/css/fontaweasome.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/detail.css">
     <link rel="stylesheet" href="./assets/css/responsivee.css">
+    <link rel="stylesheet" href="./assets/css/detail.css">
+   
     
 </head>
 
@@ -20,11 +21,11 @@
         <div class="header">
             <div class="grip wide">
                 <div class="row_flex">
-                    <div class="header-logo col-6 m-9">
+                    <div class="header-logo col-6 m-9 l-9">
                         <div class="header-logo-img">
                             <a class="header-logo_link" href="./index.html">
-                                <img src="./assets/img/logoMain.png" alt="">
-                                <!-- <img src="/assets/img/demoWeb2.svg" alt="LOGO">  -->
+                                <img src="assets/img/logoMain.png" alt="">
+                                <!-- <img src="/assets/img/demoWeb2.svg" alt="LOGO">  -->  
                             </a>
                         </div>
                         <div class="header-location">
@@ -41,18 +42,18 @@
                                                 <a href=""> Vinh - Nghệ An</a>
                                             </li>
                                             <li class="location-history-item">
-                                                <a href="">Hà Giang</a>
+                                               <a href="">Hà Giang</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <button class="location-items_button">
-                                <i class="fas fa-search"></i>
-                            </button>
+                                    <img src="assets/img/iconFind.png" alt="">
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="header-menu col-6 m-3">
+                    <div class="header-menu col-6 m-3 l-2-5">
                         <div class="menu-navbar-btn">
                             <span></span>
                             <span></span>
@@ -62,59 +63,112 @@
                             <li class="menu-items">
                                 <a href="./news.html">Hướng dẫn</a>
                             </li>
-                            <li class="menu-items">
-                                <a href="./product.html">Hot place</a>
+                            <li  class="menu-items">
+                                <a  href="./product.html">Hot place</a>
                             </li>
-                            <li class="menu-items">
+                            <li class="menu-items" id="menudangxuat">
                                 <a href="./register.html">Đăng ký</a>
                             </li>
-                            <li class="menu-items">
-                                <a href="./login.html">Đăng nhập</a>
+                            <li class="menu-items " id="menudangnhap">
+                                <a  href="./login.html">Đăng nhập</a>
                             </li>
-                            <li class="menu-items item_relavie">
+                            <li class="menu-items item_relavie mb_none">
+                                <div class="menu-items-language active-account__user">
+                                    <span class="menu-items_link">
+                                       <!--  <img src="assets/img/VN.svg" alt=""> -->
+                                        <i class="fas fa-user"></i>
+                                        <span>Quản lý tài khoản</span>
+                                    </span>
+                                </div> 
+                                <div class="menu-language-contain menu-user__account">
+                                    <div class="language-contain-list row_flex">
+                                        <div class="language-contain-items col-12">
+                                            <div class="language-contain-list_link">
+                                                <a  class="contain-items_link user__account--underline">
+                                                    <span class="languge-items_link user__account--res">
+                                                        <i class="far fa-calendar"></i>
+                                                        <span class="">Đặt chỗ cho tôi</span>
+                                                    </span>
+                                                </a>
+                                               
+                                                <a class="contain-items_link user__account--underline">
+                                                    <span class="languge-items_link">
+                                                        <i class="far fa-envelope"></i>
+                                                        <span>Tin nhắn</span>
+                                                    </span>
+                                                </a>
+                                                <a class="contain-items_link user__account--underline">
+                                                    <span class="languge-items_link">
+                                                        <i class="fas fa-cog"></i>
+                                                       
+                                                        <span>Cài đặt tài khoản</span>
+                                                    </span>
+                                                </a>
+                                                
+                                                <a class="contain-items_link user__account--underline">
+                                                    <span class="languge-items_link">
+                                                        <i class="far fa-user"></i>
+                                                       
+                                                        <span>Quản lý Sản Phẩm</span>
+                                                    </span>
+                                                </a>
+                                                <a class="contain-items_link user__account--underline">
+                                                    <span class="languge-items_link">
+                                                        <i class="fas fa-sign-out-alt"></i>
+                                                       
+                                                        <span>Đăng xuất</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-items item_relavie mb_mt">
                                 <div class="menu-items-language">
                                     <span class="menu-items_link">
-                                    <img src="assets/img/VN.svg" alt=""> 
-                                    <span>VND</span>
+                                        <img src="assets/img/VN.svg" alt=""> 
+                                        <span>VND</span>
                                     </span>
-                                </div>
-
+                                </div> 
+    
                                 <div class="menu-language-contain">
                                     <div class="language-contain-list row_flex">
                                         <div class="language-contain-items col-6">
-                                            <a class="contain-items_link">
+                                            <a  class="contain-items_link">
                                                 <span class="languge-items_link">
-                                                <img src="assets/img/VN.svg" alt=""> 
-                                                <span>Tiếng việt</span>
+                                                    <img src="assets/img/VN.svg" alt=""> 
+                                                    <span>Tiếng việt</span>
                                                 </span>
                                             </a>
-
+                                           
                                             <a class="contain-items_link">
                                                 <span class="languge-items_link">
-                                                <img src="assets/img/en.svg" alt=""> 
-                                                <span>English</span>
+                                                    <img src="assets/img/en.svg" alt=""> 
+                                                    <span>English</span>
                                                 </span>
                                             </a>
                                             <a class="contain-items_link">
                                                 <span class="languge-items_link">
-                                                <img src="assets/img/en.svg" alt=""> 
-                                               
-                                                <span>English - Indian</span>
+                                                    <img src="assets/img/en.svg" alt=""> 
+                                                   
+                                                    <span>English - Indian</span>
                                                 </span>
                                             </a>
                                         </div>
                                         <div class="language-contain-items col-6">
                                             <a class="contain-items_link">
                                                 <span class="languge-items_link">
-                                                <span class="languge-money">VND</span>
-                                                <span class="languge_display">Vi En Di</span>
+                                                    <span class="languge-money">VND</span>
+                                                    <span class="languge_display">Vi En Di</span>
                                                 </span>
                                             </a>
-
+                                           
                                             <a class="contain-items_link">
                                                 <span class="languge-items_link">
-                                                <span class="languge-money">USD</span>
-                                                <span class="languge_display">United state dollar</span>
+                                                    <span class="languge-money">USD</span>
+                                                    <span class="languge_display">United state dollar</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -2256,93 +2310,98 @@
         </div>
         <div class="space-top "></div>
         <!-- footer -->
-        <div class="footer ">
-            <div class="grip wide ">
-                <div class="footer-list ">
-                    <div class="footer-items col-3 ">
-                        <h3 class="footer-heading ">
+        <div class="footer">
+            <div class="grip wide">
+                <div class="footer-list">
+                    <div class="footer-items col-3 l-6">
+                        <h3 class="footer-heading">
                             TOP HOMESTAY ĐƯỢC YÊU THÍCH
                         </h3>
-                        <ul class="footer-menu-list ">
-                            <li class="footer-menu_item ">
-                                <a href=" ">Teamstay Hà Nội</a>
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu_item">
+                                <a href="">Teamstay Hà Nội</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Teamstay Hồ Chí Minh</a>
+                            <li class="footer-menu_item">
+                                <a href="">Teamstay Hồ Chí Minh</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Teamstay Đà Lạt</a>
+                            <li class="footer-menu_item">
+                                <a href="">Teamstay Đà Lạt</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Teamstay Đà Nẵng</a>
+                            <li class="footer-menu_item">
+                                <a href="">Teamstay Đà Nẵng</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Teamstay Vũng Tàu</a>
+                            <li class="footer-menu_item">
+                                <a href="">Teamstay Vũng Tàu</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-items col-3 ">
-                        <h3 class="footer-heading ">
+                    <div class="footer-items col-3 l-6">
+                        <h3 class="footer-heading">
                             KHÔNG GIAN ƯA THÍCH
                         </h3>
-                        <ul class="footer-menu-list ">
-                            <li class="footer-menu_item ">
-                                <a href=" ">Căn hộ dịch vụ</a>
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu_item">
+                                <a href="">Căn hộ dịch vụ</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Biệt thự</a>
+                            <li class="footer-menu_item">
+                                <a href="">Biệt thự</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Nhà riêng</a>
+                            <li class="footer-menu_item">
+                                <a href="">Nhà riêng</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Studio</a>
+                            <li class="footer-menu_item">
+                                <a href="">Studio</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Travel Guide</a>
+                            <li class="footer-menu_item">
+                                <a href="">Travel Guide</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-items col-3 ">
-                        <h3 class="footer-heading ">
+                    <div class="footer-items col-3 l-6 footer_mt">
+                        <h3 class="footer-heading">
                             VỀ CHÚNG TÔI
                         </h3>
-                        <ul class="footer-menu-list ">
-                            <li class="footer-menu_item ">
-                                <a href=" ">Blog</a>
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu_item">
+                                <a href="">Blog</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">Điều khoản hoạt động</a>
+                            <li class="footer-menu_item">
+                                <a href="">Điều khoản hoạt động</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">0328618265</a>
+                            <li class="footer-menu_item">
+                                <a href="">0328618265</a>
                             </li>
-                            <li class="footer-menu_item ">
-                                <a href=" ">teamstay11@gmail.com</a>
+                            <li class="footer-menu_item">
+                                <a href="">teamstay11@gmail.com</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-items col-3 ">
-                        <h3 class="footer-heading ">
+                    <div class="footer-items col-3 l-6 footer_mt">
+                        <h3 class="footer-heading">
                             TẢI ỨNG DỤNG TEAMSTAY
                         </h3>
-                        <div class="introduction-app ">
-                            <div class="introduction-qr col-6 ">
-                                <img src="./assets/img/details/qr-code.png " alt=" ">
+                        <div class="introduction-app">
+                            <div class="introduction-qr col-6">
+                                <img src="assets/img/qr-code.png" alt="">
                             </div>
-                            <div class="introduction-app_dowload col-6 ">
-                                <div class="app_dowload-footer ">
-                                    <a href=" "><img src="./assets/img/details/apple-store.svg " alt=" "></a>
+                            <div class="introduction-app_dowload col-6">
+                                <div class="app_dowload-footer">
+                                   <a href=""><img src="assets/img/apple-store.svg" alt=""></a>
                                 </div>
-                                <div class="app_dowload-footer ">
-                                    <a href=" "><img src="./assets/img/details/google-play.svg" alt=" "></a>
+                                <div class="app_dowload-footer">
+                                    <a href=""><img  src="assets/img/google-play.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+    
+            <!-- desinger -->
+            
+            
+        </div> 
+        
         <!-- desinger -->
         <div>
             <p class="description_desinger ">Desinger by Teamstay</p>

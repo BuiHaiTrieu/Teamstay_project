@@ -173,7 +173,7 @@ window.onload = () => {
         headerLogo.classList.add('header-logo_link_login');
 
         headerLogoImg.src = './assets/img/logoTemaStay.png';
-
+        headerLogo.parentElement.classList.add('header-logo-change') 
     }
 }
 

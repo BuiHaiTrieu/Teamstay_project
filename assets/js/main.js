@@ -42,3 +42,9 @@ displayMenuMobile();
     activeUser.parentElement.classList.add('item_relavie')
 }
 activeBlockUser(); */
+
+const menuLanguage = document.getElementsByClassName('item_relavie')
+const language_active = document.getElementsByClassName('menu-language-contain')
+
+console.log(menuLanguage);
+console.log(language_active.parentNode);

@@ -94,7 +94,162 @@ ul,li,a {
 
 
 /* responsive với tablet */
+@media screen and (min-width: 740px) and (max-width:1023px) {
+    /* Trang chủ */
+    .l-2-5 {
+        width: 20%;
+    }
+    .l-3 {
+        width: 25%;
+    }
+    .l-4 {
+        width:33.33333%;
+    }
+    .l-6 {
+        width: 50%;
+    }
+    .l-9 {
+        width: 75%;
+    }
+    .l-12 {
+        width: 100%;
+    }
+    .header {
+        min-height: 65px;
+    }
+    .header-logo {
+        flex-wrap: nowrap;
+    }
+    .header-logo-img img{
+        margin-left: 15px;
+        width: 60px;
+        height: 60px;
+        display: block;
+        padding:3px;  
+    }
+    .header-logo-change img {
+        width: 125px;
+        height: 66px;
+        padding: 3px;
+    }
+    .header-location-list {
+        margin-left: 20px;
+    }
+    .header-location {
+        width:100%;
+    }
+    .menu-list {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(124, 124, 124, 0.6);
+        border-radius: 15px;
+        backdrop-filter: saturate(180%) blur(15px);
+        position: absolute;
+        z-index: 99;
+        transition: all 0.5s;
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-left:0;
+        display:none;
+    }
+    .menu-list_active {
+        display: block;
+    }
+    .menu-list .menu-items:first-child {
+        margin-top:10px;
+    }
+    .menu-list .menu-items:nth-child(5) {
+        margin-bottom: 20px;
+    }
+    .menu-items {
+        margin-left:20px;
+        margin-right: 20px;
+        letter-spacing: 0.2px;
+       
+    }
+    .mb_mt {
+        margin-bottom: 15px;
+    }
+    .menu-items a:hover {
+        color: var(--hover-color);
+        margin-top:0px;
+       
+    }
+    .menu-language-contain::after {
+        border-color: var(--text-color) transparent transparent var(--text-color);
+    }
+    .menu-language-contain {
+        min-width:350px;
+        right: -20px;
+        border: 1px solid var(--text-color);
+    }
+    
+    .contain-items_link .languge_display{
+        display: none;
+    }
+    .menu-navbar-btn span {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .space-top {
+        margin-top:20px;
+    }
 
+    .container_slider {
+        padding-left:10px;
+       
+    }
+    
+    .wide {
+        padding-left:15px;
+        padding-right: 15px;
+    }
+
+
+
+    /* Đăng ký đăng nhập */
+    .container-section-account {
+       margin-top: -40px;
+
+       padding: 25px;
+    }
+    .first-x2 {
+        order: 1;
+    }
+    .last-x2 {
+        order: 2;
+    }
+    .container-section-list .container-section-item:nth-child(3), 
+    .container-section-list .container-section-item:nth-child(4) { 
+        margin-top:20px;
+    }
+    .section-ittem__register {
+        margin-top: 30px !important;
+    }
+    /* Footer */
+    .footer-list {
+        display:flex;
+        flex-wrap: wrap;
+      
+    }
+    .footer_mt{
+        margin-top:30px;
+    }
+
+    /* Sản phẩm */
+    .subcategory-contain {
+        margin-left: 10%;
+    }
+    .subcategory-input {
+        max-width:100px;
+    }
+    /* Tin tức */
+    
+
+}
 
 
 
@@ -160,13 +315,13 @@ ul,li,a {
         position: absolute;
         top: 51px;
         right: 20px;
-        background: rgba(175, 175, 175, 0.4);
+        background: rgba(124, 124, 124, 0.6);
         border-radius: 15px;
         backdrop-filter: saturate(180%) blur(15px);
         position: absolute;
         z-index: 99;
         transition: all 0.5s;
-        min-width: 200px;
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         padding-left:0;
@@ -244,7 +399,7 @@ ul,li,a {
         line-height:2rem;
     }
     .section-block-img { 
-        max-height: 190px;
+       width: 100%;
     }
     .mb_mt {
        margin-top:15px;
@@ -480,5 +635,8 @@ ul,li,a {
         padding: 0 25px 50px;
         cursor: pointer;
     }
-
+    .wide {
+      
+        padding-right: 15px;
+    }
 }
